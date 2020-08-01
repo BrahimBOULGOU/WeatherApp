@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="appid">bf4f9518159724b2be83a5774e65ad3d</string>
+    <string name="city">Paris, Fr</string>
+</resources>
