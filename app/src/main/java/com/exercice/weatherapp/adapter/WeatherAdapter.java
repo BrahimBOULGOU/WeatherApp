@@ -27,7 +27,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherViewHolder> {
 
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(layout.weather_item, parent, false);
+        View view = inflater.inflate(R.layout.weather_item, parent, false);
 
         return new WeatherViewHolder(view);
     }
