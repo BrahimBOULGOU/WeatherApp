@@ -11,10 +11,6 @@ pool:
 
 steps:
 
-- task: AndroidSigning@3
-  inputs:
-    apkFiles: '**/*.apk'
-    apksign: false
 - task: Gradle@2
   inputs:
     workingDirectory: ''
