@@ -52,7 +52,9 @@ public class MainActivity extends DaggerAppCompatActivity {
             public void onChanged(WeatherData weatherData) {
                 if (weatherData != null) {
                     updateUI(weatherData.getList());
-                    //un test
+
+                    //cette brash test
+                    
                 }
             }
         });
