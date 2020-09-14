@@ -19,7 +19,7 @@ android {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+
     testImplementation 'org.testng:testng:6.9.6'
     androidTestImplementation 'junit:junit:4.12'
 
