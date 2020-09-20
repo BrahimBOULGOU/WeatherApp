@@ -9,16 +9,29 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        flavorDimensions "default"
+        //flavorDimensions "Develop"
     }
-   /* buildTypes {
+   buildTypes {
         release {
+            manifestPlaceholders = [
+                    appIcon: "@mipmap/ic_launcher",
+                    appIconRound: "@mipmap/ic_launcher_round",
+                    AppName: "@string/app_name_test"
+            ]
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
-    }*/
 
-    productFlavors{
+       debug {
+           manifestPlaceholders = [
+                   appIcon: "@mipmap/ic_launcher",
+                   appIconRound: "@mipmap/ic_launcher_round",
+                   AppName: "@string/app_name"
+           ]
+       }
+    }
+
+    /*productFlavors{
         Develop{
             //versionName "$defaultConfig.versionName" + ".test"
             // resValue "string", "app_name", "App-Test"
@@ -37,7 +50,7 @@ android {
                     AppName: "@string/app_name"
             ]
         }
-    }
+    }*/
 }
 
 dependencies {
